@@ -159,7 +159,7 @@ footer {
 }
 
 #left-column {
-  width: 650px;
+  width: 60%;
   float: left;
 }
 
@@ -171,7 +171,7 @@ footer {
 }
 
 #right-column {
-  width: 270px;
+  width: 37%;
   float: right;
 }
 
@@ -238,78 +238,51 @@ footer {
 
 /*
   These rules take effect when the browser's width
-  is either 768px or less.
+  is either 980px or less.
 */
 
 @media screen and (max-width: 980px) {
-  /* The body's bg color will be #333 */
-  body {
-    background-color: #333;
-  }
-  /* The wrapper's width will be 600px */
+ 
   .wrapper {
-    width: 600px;
+    width: 90%;
   }
-  #main-content,
-  #sidebar {
-    /* Box-model */
-    width: 100%;
-    float: none;
-    padding: 30px;
-    margin: 30px 0;
-  }
-}
-
-/* Width at 980px and below */
-
-@media screen and (max-width: 768px) {
-  body {
-  h1 {
-    width: 100%;
-    text-align: center;
-  }
-  
-  header {
-    background-color: #fff;
-  }
-  nav {
-    width: 100%;
-
-  }
-  /* Need to fix code to space nav across the page for phone */
-
-  nav a {
-    padding: 10px 30px;
-    border-right: none;
-  }
-
-.wrapper {
-  /* Box-model */
-  width: 100%;
-  padding: 20px;
-}
-
-#left-column,
-#right-column {
-  width: 100%;
-}
 
 #left-column {
-  margin-top: 20px;
+  width: 62%;
 }
-
-#left-column img {
-  width: 100%
-}
-
 #right-column {
-  margin-top: 20px;
+  width: 37%;
 }
 
 .portfolio-item {
   width: 100%
 }
 
+}
+
+/* Width at 768px and below */
+
+@media screen and (max-width: 768px) {
+  
+  .wrapper {
+    width: 90%;
+  }
+    #right-column {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #left-column,
+  #right-column {
+    width: 100%;
+  }
+  .portfolio-item {
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
+    float: left;
+    height: 250px;
+  }
+  
 }
 
 /* Additional Screen Sizes */
@@ -321,46 +294,34 @@ footer {
     width: 100%;
     text-align: center;
   }
-  
   header {
     background-color: #fff;
   }
   nav {
     width: 100%;
-
   }
-  /* Need to fix code to space nav across the page for phone */
-
   nav a {
     padding: 10px 30px;
     border-right: none;
   }
-
-.wrapper {
-  /* Box-model */
-  width: 100%;
-  padding: 20px;
-}
-
-#left-column,
-#right-column {
-  width: 100%;
-}
-
-#left-column {
-  margin-top: 20px;
-}
-
-#left-column img {
-  width: 100%
-}
-
-#right-column {
-  margin-top: 20px;
-}
-
-.portfolio-item {
-  width: 100%
-}
-
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  #left-column,
+  #right-column {
+    width: 100%;
+  }
+  #left-column {
+    margin-top: 20px;
+  }
+  #left-column img {
+    width: 100%
+  }
+  #right-column {
+    margin-top: 20px;
+  }
+  .portfolio-item {
+    width: 100%
+  }
 }
