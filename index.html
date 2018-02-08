@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Joyce Santos Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Basic Portfolio with Media tags</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <Header>
-        <h1>Joyce Santos</h1>
-    </Header>
-
-    <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div>
-
+  <header>
+    <div class="wrapper">
+      <h1>Joyce Santos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <aside>
+  </header>
 
+  <div class="wrapper">
+    <section id="left-column">
+      <h2>About Me</h2>
+
+      <img src="./assets/images/Photo.jpg" alt="A picture of Joyce Santos" width="200px" class="inline-img"/>
+
+      <p>
+        A seasoned marketing pro, Joyce has experience in Product Development and Marketing for electronics. She is currently going to school for Front-end and Backend Development for Websites. 
+        </p>
+        <p> 
+        Starting as a computer programmer, Joyce has always been on the cutting edge of technology. Moving into product planning and development, she researched and tested new features for popular electronic devices. 
+        </p>  
+        <p>
+        Joyce was Marketing Director for Latin America and Canada at Brother, where she improved the marketing for the these subsidiaries. With a passport of stamps from around the world, Joyce joined the BuzzFish Team to oversee new initiatives. 
+        </p> 
+        <p> 
+        At her core Joyce is still a techy, she enjoys website development and improving SEO. In her free time, Joyce spends time with her granddaughter Riley and dog Daisy Mae taste testing ice cream shops in the Northeast. 
+        </p>
+    </section>
+    <aside id="right-column">
+      <h3>Connect with me.</h3>
+      <ul>
+          <li><a href="#" target="_blank"><img src="./assets/images/github.png" alt="GitHub"/></a></li>
+          <li><a href="#" target="_blank"><img src="./assets/images/gmail.png" alt="Gmail"/></a></li>
+          <li><a href="#" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn"/></a></li>
+          <li><a href="#" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stack Overflow"/></a></li>
+          <li><a href="#" target="_blank"><img src="./assets/images/youtube.png" alt="YouTube"/></a></li>
+      </ul>
     </aside>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <footer>
+    &copy;2018 Joyce Santos
+  </footer>
+
 </body>
-
-<footer>
-    <small>&copy; 2018 Joyce Santos</small>
-</footer>
-
 </html>
