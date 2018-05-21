@@ -1,63 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact | Basic Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <title>Joyce Santos Contact</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="wrapper">
-      <h1>Joyce Santos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+  <!-- Create Nav bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <!-- This is the brand logo area -->
+      <a class="navbar-brand" href="#">
+        <h1>Joyce Santos</h1>
+      </a>
+
+      <!-- Navigation Content
+  This is the code for the hamburger menu for smaller screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav content -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- List holds nav items -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="wrapper">
-    <section id="left-column">
-      <h2>Contact Me</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12 my-3">
+        <h2 class="font-weight-bold">Contact Me</h2>
+        <hr class="my-4">
 
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="form-name" placeholder="Enter name">
+        <div class="row">
+          <div class="col">
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="form-email" placeholder="Enter email">
+            <!--Form goes here-->
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Email</label>
+                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
+              </div>
 
-        <label for="message">Message:</label>
-        <textarea name="message" id="form-message"></textarea>
+              <div class="form-group">
+                <label for="exampleTextarea">Message</label>
+                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Type your message"></textarea>
+              </div>
 
-        <button type="submit">Submit Form</button>
-      </form>
+              <button type="submit" class="btn btn-info btn-lg">Submit</button>
 
-      
-    </section>
-    <aside id="right-column">
-      <h3>Connect with me.</h3>
-      <ul>
-          <li><a href="#" target="_blank"><img src="./assets/images/github.png" alt="GitHub"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/gmail.png" alt="Gmail"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stack Overflow"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/youtube.png" alt="YouTube"/></a></li>
-      </ul>
-    </aside>
+            </form>
+          </div>
+        </div>
+        <!-- Close out left-column entirely -->
+      </div>
+
+      <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+
+      <div class="col-md-4 col-sm-12 my-3">
+        <div class="card">
+          <!-- Override formatting for h3 class in CSS-->
+          <div class="card-header">
+            <h3 class="font-weight-bold text-center">Connect with Me</h3>
+          </div>
+
+
+          <div class="card-body" style="height:auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/puppitty" target="_blank">
+                  <img src="./assets/images/github1.png" width="60" height="60" class="social image-fluid" alt="Github">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/joyce-santos-363b084/" target="_blank">
+                  <img src="./assets/images/linkedin1.png" width="60" height="60" class="social image-fluid" alt="LinkedIn">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://stackoverflow.com/users/9157213/joyce-santos" target="_blank">
+                  <img src="./assets/images/stackoverflow.png" width="60" height="60" class="social image-fluid" alt="Stack Overflow">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="push"></div>
 
   <div class="clearfix"></div>
 
+  <!--Full footer area-->
+  <!--footer is on top of contact info in mobile just for contact page-->
+
   <footer>
-    &copy;2018 Joyce Santos
+    <div class="fixed-bottom bg-info text-white text-center p-3">
+      &copy; 2018 Joyce Santos
+    </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>

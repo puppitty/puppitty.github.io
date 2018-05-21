@@ -1,63 +1,155 @@
 <!DOCTYPE html>
+<!-- TODO Open items: Fix visual of Connect with me (too large, gray background) especially in ipad size. Fix nav items and how they display when you click.
+
+-->
+
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home | Basic Portfolio with Media tags</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <title>Joyce Santos Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-  <header>
-    <div class="wrapper">
-      <h1>Joyce Santos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+
+  <!-- Create Nav bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <!-- This is the brand logo area -->
+      <a class="navbar-brand" href="#">
+        <h1>Joyce Santos</h1>
+      </a>
+
+      <!-- Navigation Content
+      This is the code for the hamburger menu for smaller screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav content -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- List holds nav items -->
+        <!--Increase size of font on Nav bar and how it highlights on mouse over / click-->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="wrapper">
-    <section id="left-column">
-      <h2>About Me</h2>
 
-      <img src="./assets/images/Photo.jpg" alt="A picture of Joyce Santos" width="200px" class="inline-img"/>
+  <div class="container">
 
-      <p>
-        A seasoned marketing pro, Joyce has experience in Product Development and Marketing for electronics. She is currently going to school for Front-end and Backend Development for Websites. 
-        </p>
-        <p> 
-        Starting as a computer programmer, Joyce has always been on the cutting edge of technology. Moving into product planning and development, she researched and tested new features for popular electronic devices. 
-        </p>  
-        <p>
-        Joyce was Marketing Director for Latin America and Canada at Brother, where she improved the marketing for the these subsidiaries. With a passport of stamps from around the world, Joyce joined the BuzzFish Team to oversee new initiatives. 
-        </p> 
-        <p> 
-        At her core Joyce is still a techy, she enjoys website development and improving SEO. In her free time, Joyce spends time with her granddaughter Riley and dog Daisy Mae taste testing ice cream shops in the Northeast. 
-        </p>
-    </section>
-    <aside id="right-column">
-      <h3>Connect with me.</h3>
-      <ul>
-          <li><a href="#" target="_blank"><img src="./assets/images/github.png" alt="GitHub"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/gmail.png" alt="Gmail"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/stackoverflow.png" alt="Stack Overflow"/></a></li>
-          <li><a href="#" target="_blank"><img src="./assets/images/youtube.png" alt="YouTube"/></a></li>
-      </ul>
-    </aside>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 my-3">
+        <h2 class="font-weight-bold">About Me</h2>
+        <hr class="my-4">
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img src="./assets/images/Photo.jpg" class="img-fluid img-thumbnail" alt="Joyce Santos">
+          </div>
+
+          <div class="col-md-8 col-sm-12">
+
+            <!-- Add float left to the CSS to wrap around the image? -->
+            <p>
+              A seasoned marketing pro, Joyce has experience in Product Development and Marketing for electronics. She is currently going
+              to school for Front-end and Backend Development for Websites.
+            </p>
+            <p>
+              Starting as a computer programmer, Joyce has always been on the cutting edge of technology. Moving into product planning
+              and development, she researched and tested new features for popular electronic devices.
+            </p>
+            <p>
+              Joyce was Marketing Director for Latin America and Canada at Brother, where she improved the marketing for the these subsidiaries.
+              With a passport of stamps from around the world, Joyce joined the BuzzFish Team to oversee new initiatives.
+            </p>
+            <p>
+              At her core Joyce is still a techy, she enjoys website development and improving SEO. In her free time, Joyce spends time
+              with her granddaughter Riley and dog Daisy Mae taste testing ice cream shops in the Northeast.
+            </p>
+
+            <!-- Close out left-column's inner-row -->
+          </div>
+          <!-- Close out left-column entirely -->
+        </div>
+
+      </div>
+
+      <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+
+      <!-- This needs to move to the top of About us section-->
+      <div class="col-md-4 col-sm-12 my-3 mb-5">
+        <div class="card">
+          <!-- Override formatting for h3 class in CSS-->
+          <div class="card-header">
+            <h3 class="font-weight-bold text-center">Connect with Me</h3>
+          </div>
+
+          <div class="card-body" style="height:auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/puppitty" target="_blank">
+                  <img src="./assets/images/github1.png" width="60" height="60" class="social image-fluid" alt="Github">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/joyce-santos-363b084/" target="_blank">
+                  <img src="./assets/images/linkedin1.png" width="60" height="60" class="social image-fluid" alt="LinkedIn">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://stackoverflow.com/users/9157213/joyce-santos" target="_blank">
+                  <img src="./assets/images/stackoverflow.png" width="60" height="60" class="social image-fluid" alt="Stack Overflow">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
+  <div class="push"></div>
+
+
+
   <div class="clearfix"></div>
+  <!--Full footer area-->
 
   <footer>
-    &copy;2018 Joyce Santos
+    <div class="fixed-bottom bg-info text-white text-center p-3">
+      &copy; 2018 Joyce Santos
+    </div>
   </footer>
 
+  <!-- <div class="jumbotron-fluid bg-info text-white p-3 text-center">
+    <h3>&copy;2018 Joyce Santos</h3>
+  </div> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>

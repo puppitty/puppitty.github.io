@@ -5,95 +5,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio | Basic Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <title>Joyce Santos Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <div class="wrapper">
-      <h1>Joyce Santos</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">About</a>
+
+  <!-- Create Nav bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+
+      <!-- This is the brand logo area -->
+      <a class="navbar-brand" href="#">
+        <h1>Joyce Santos</h1>
+      </a>
+
+      <!-- Navigation Content
+      This is the code for the hamburger menu for smaller screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav content -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- List holds nav items -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About
+
+            </a>
           </li>
-          <li>
-            <a href="portfolio.html">Portfolio</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="./portfolio.html">Portfolio
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <div class="wrapper">
-    <section id="left-column">
-      <h2>My Portfolio</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12 my-3">
+        <h2 class="font-weight-bold">Portfolio</h2>
+        <hr class="my-4">
 
-      <a href="#" class="portfolio-item" id="port1">
-        <h4>Port 1</h4>
-      </a>
-      <a href="#" class="portfolio-item" id="port2">
-        <h4>Port 2</h4>
-      </a>
-      <a href="#" class="portfolio-item" id="port3">
-        <h4>Port 3</h4>
-      </a>
-      <a href="#" class="portfolio-item" id="port4">
-        <h4>Port 4</h4>
-      </a>
-      <a href="#" class="portfolio-item" id="port5">
-        <h4>Port 5</h4>
-      </a>
-      <a href="#" class="portfolio-item" id="port6">
-        <h4>Port 6</h4>
-      </a>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <a href="https://puppitty.github.io/Crystal_Collector/" style="z-index:5" target="_blank">
+                <img class="card-img" src="./assets/images/crystal-ball1.jpg" style="z-index:1" alt="Crystal Ball">
+              </a>
+              <div class="card-img-overlay">
+                <h5 class="bg-info" style="z-index:10" "card-title">Psychic Game</h5>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="./assets/images/Image2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="bg-info" "card-title">RPG Games</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row  pt-3">
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="./assets/images/Image3.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="bg-info" "card-title">Trivia Games</h5>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="./assets/images/Image4.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="bg-info" "card-title">Rutgers Info Widget</h5>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row  pt-3">
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="./assets/images/Image5.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="bg-info" "card-title">Rock Paper Scissors</h5>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="./assets/images/Image6.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h5 class="bg-info" "card-title">Grandma's World</h5>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
 
 
-    </section>
-    <aside id="right-column">
-      <h3>Connect with me.</h3>
-      <ul>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./assets/images/github.png" alt="GitHub" />
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./assets/images/gmail.png" alt="Gmail" />
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./assets/images/linkedin.png" alt="LinkedIn" />
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./assets/images/stackoverflow.png" alt="Stack Overflow" />
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img src="./assets/images/youtube.png" alt="YouTube" />
-          </a>
-        </li>
-      </ul>
-    </aside>
+      <!-- Close out left-column entirely -->
+      <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+
+      <!-- This needs to move to up next to Portfolio header div tags??-->
+      <div class="col-md-4 col-sm-12 my-3">
+        <div class="card">
+          <!-- Override formatting for h3 class in CSS-->
+          <div class="card-header">
+            <h3 class="font-weight-bold text-center">Connect with Me</h3>
+          </div>
+
+          <div class="card-body" style="height:auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/puppitty" target="_blank">
+                  <img src="./assets/images/github1.png" width="60" height="60" class="social image-fluid" alt="Github">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/joyce-santos-363b084/" target="_blank">
+                  <img src="./assets/images/linkedin1.png" width="60" height="60" class="social image-fluid" alt="LinkedIn">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://stackoverflow.com/users/9157213/joyce-santos" target="_blank">
+                  <img src="./assets/images/stackoverflow.png" width="60" height="60" class="social image-fluid" alt="Stack Overflow">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="clearfix"></div>
+  <div class="push"></div>
 
+  <div class="clearfix"></div>
+  <!--Full footer area-->
+  <!--footer is not floating at the bottom-->
   <footer>
-    &copy;2018 Joyce Santos
+    <div class="fixed-bottom bg-info text-white text-center p-3">
+      &copy; 2018 Joyce Santos
+    </div>
   </footer>
 
+  <!-- <div class="jumbotron-fluid bg-info text-white p-3 text-center">
+    <h3>&copy;2018 Joyce Santos</h3>
+  </div> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
